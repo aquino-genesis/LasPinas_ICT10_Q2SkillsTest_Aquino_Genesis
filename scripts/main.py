@@ -34,6 +34,7 @@ def exit_scene(event):
     if event.code == "Escape":
         playSound("hideSFX")
         load_options()
+        update_cursor_position()
         if escape_press_proxy:
             window.removeEventListener("keydown", escape_press_proxy)
             escape_press_proxy.destroy()
@@ -346,3 +347,23 @@ def club_check(event):
 
     # did this all make you happy ma'am i did allat without if statements :')
     # just let us use conditionals ma'am NO ONE likes using goofy lookups
+
+def element_check(event):
+    document.getElementById("elementResult").innerHTML = " "
+    elementInput = document.getElementById("elementName").value.strip().title()
+    
+    elementData = non_metals.get(
+        elementInput,
+        {"symbol": "Element not found",
+         "element": "Element not found",
+         "atomic_number": "Element not found",
+         "atomic_mass": "Element not found"}
+    )
+
+    document.getElementById("elementResult").innerHTML = f"""
+    <b>Symbol:</b> {elementData["symbol"]} <br>
+    <b>Element:</b> {elementData["element"]} <br>
+    <b>Atomic Number:</b> {elementData["atomic_number"]} <br>
+    <b>Atomic Mass:</b> {elementData["atomic_mass"]}
+    """
+

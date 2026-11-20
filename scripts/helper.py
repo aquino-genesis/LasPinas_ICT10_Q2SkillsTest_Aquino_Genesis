@@ -82,6 +82,26 @@ persona_users = [
     "Erina Erina"
 ]
 
+non_metals = {
+    "H": {"symbol": "H", "element": "Hydrogen", "atomic_number": 1, "atomic_mass": 1.008},
+    "He": {"symbol": "He", "element": "Helium", "atomic_number": 2, "atomic_mass": 4.0026},
+    "C": {"symbol": "C", "element": "Carbon", "atomic_number": 6, "atomic_mass": 12.011},
+    "N": {"symbol": "N", "element": "Nitrogen", "atomic_number": 7, "atomic_mass": 14.007},
+    "O": {"symbol": "O", "element": "Oxygen", "atomic_number": 8, "atomic_mass": 15.999},
+    "F": {"symbol": "F", "element": "Fluorine", "atomic_number": 9, "atomic_mass": 18.998},
+    "Ne": {"symbol": "Ne", "element": "Neon", "atomic_number": 10, "atomic_mass": 20.180},
+    "P": {"symbol": "P", "element": "Phosphorus", "atomic_number": 15, "atomic_mass": 30.974},
+    "S": {"symbol": "S", "element": "Sulfur", "atomic_number": 16, "atomic_mass": 32.06},
+    "Cl": {"symbol": "Cl", "element": "Chlorine", "atomic_number": 17, "atomic_mass": 35.45},
+    "Ar": {"symbol": "Ar", "element": "Argon", "atomic_number": 18, "atomic_mass": 39.95},
+    "Se": {"symbol": "Se", "element": "Selenium", "atomic_number": 34, "atomic_mass": 78.971},
+    "Br": {"symbol": "Br", "element": "Bromine", "atomic_number": 35, "atomic_mass": 79.904},
+    "Kr": {"symbol": "Kr", "element": "Krypton", "atomic_number": 36, "atomic_mass": 83.798},
+    "I": {"symbol": "I", "element": "Iodine", "atomic_number": 53, "atomic_mass": 126.90},
+    "Xe": {"symbol": "Xe", "element": "Xenon", "atomic_number": 54, "atomic_mass": 131.29},
+    "Rn": {"symbol": "Rn", "element": "Radon", "atomic_number": 86, "atomic_mass": 222.0},
+}
+
 BASE_UNIT_WIDTH = 100
 
 # === GLOBALS ===
