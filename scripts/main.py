@@ -351,13 +351,15 @@ def club_check(event):
 def element_check(event):
     document.getElementById("elementResult").innerHTML = " "
     elementInput = document.getElementById("elementName").value.strip().title()
-    
+
     elementData = non_metals.get(
         elementInput,
-        {"symbol": "Element not found",
-         "element": "Element not found",
-         "atomic_number": "Element not found",
-         "atomic_mass": "Element not found"}
+        {
+            "symbol": "Element not found",
+            "element": "Element not found",
+            "atomic_number": "Element not found",
+            "atomic_mass": "Element not found"
+        }
     )
 
     document.getElementById("elementResult").innerHTML = f"""
